@@ -5,5 +5,5 @@
 
 capitaine = 'yanick'
 age = 37
-print("nom :"+capitaine+' et '+"prénom :"+str(age)+ " ans")
+print("nom :"+capitaine1+' et '+"prénom :"+str(age)+ " ans")
 
