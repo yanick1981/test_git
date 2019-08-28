@@ -1,0 +1,50 @@
+#!/usr/bin/env python3
+# Additionner les valeur d'un dictionnaire
+employes = {"Pierre": 2500, "Marie": 5000, "Julien": 1200}
+employes.values()
+valeur = sum(employes.values())
+print(valeur)
+
+
+# Retourner un nombre aleatoire entre 0 et 5
+import random
+
+nombre_aleatoire = random.randint(0,5)
+print(nombre_aleatoire)
+
+#
+liste = [1, 1, 4, 3, 3, 2, 6, 7, 7, 9, 2]
+liste2= [1, 1, 4, 3, 3, 2, 6, 7, 7, 9, 2]
+var1=set(liste)
+var2=set(liste2)
+var3=var1.intersection(var2)
+resultat=[i*(i+1%(i*5)) for i in sorted(list(var3))]
+print(resultat)
+
+
+# Fonction reversed
+
+mot ="Udemy"
+inv =[]
+
+for i in reversed(mot) :
+    inv.append(i)
+
+var="".join(inv)
+resultat_format =var.capitalize()
+print(resultat_format)
+
+# Printer le resultat de la fonction addition
+def addition(a,b):
+    c = a + b
+    return c
+
+resultat = addition(5,10)
+print(resultat)
+
+
+# Methode avec format pour la table de 7
+nombre = 7
+ 
+for i in range(11):
+    print("{i} x {nombre} = {resultat}".format(i=i, nombre=nombre, resultat=i*nombre))
